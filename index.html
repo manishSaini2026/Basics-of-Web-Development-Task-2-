@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Workspace Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Step 3: Flexbox Navigation -->
+    <nav class="navbar">
+        <h2>🚀 WorkSpace</h2>
+        <p>Total Tasks: <span id="taskCount">0</span></p>
+    </nav>
+
+    <!-- Step 3: CSS Grid Layout -->
+    <main class="main-grid">
+        
+        <!-- Step 1: Contact Form Component -->
+        <section class="box">
+            <h3>📝 Onboard New Project</h3>
+            <form id="taskForm" novalidate>
+                <input type="text" id="clientName" placeholder="Client or Project Name">
+                <input type="email" id="clientEmail" placeholder="Client Email Address">
+                <button type="submit">Add Task</button>
+            </form>
+        </section>
+
+        <!-- Step 4: Dynamic To-Do List View -->
+        <section class="box">
+            <h3>📊 Active Project Registry</h3>
+            <ul id="taskList">
+                <!-- Javascript will inject list entries dynamically here -->
+            </ul>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
